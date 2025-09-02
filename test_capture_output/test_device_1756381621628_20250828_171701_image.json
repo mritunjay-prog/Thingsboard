@@ -1,0 +1,22 @@
+{
+  "type": "simulated_image",
+  "timestamp": 1756381621632,
+  "configuration": {
+    "resolution": "low",
+    "quality": 50,
+    "format": "jpeg",
+    "flash": false,
+    "exposure_compensation": 0,
+    "white_balance": "auto",
+    "return_method": "url",
+    "save_local": true,
+    "burst_number": 1,
+    "sequence_number": 1,
+    "capture_session": "timed_capture"
+  },
+  "resolution": "640x480",
+  "format": "jpeg",
+  "quality": 50,
+  "simulated": true,
+  "note": "This is a simulated capture for testing. In production, actual camera hardware would be used."
+}

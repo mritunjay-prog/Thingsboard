@@ -1,0 +1,60 @@
+[DEFAULT]
+db.host = localhost
+db.port = 5432
+db.name = postgres
+db.user = myuser
+db.password = example
+s3.bucket = anup-keypoint-detection-work
+s3.region = us-east-1
+s3.access_key = ${AWS_ACCESS_KEY}
+s3.secret_key = ${AWS_SECRET_KEY}
+upload.local_folder = ./media_files
+upload.file_extensions = .mp4,.jpg
+service.hostname_check_interval = 300
+service.upload_batch_size = 10
+
+[thingsboard] #this is the new config fiel 
+url = https://thingsboard-poc.papayaparking.com
+username = mritunjay.sharma@neurabitsolution.com
+password = Mritunjay@0789
+jwt_token = eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtcml0dW5qYXkuc2hhcm1hQG5ldXJhYml0c29sdXRpb24uY29tIiwidXNlcklkIjoiYmFjYzlkMzAtNTBlNS0xMWYwLTlhYjAtNzMyZTZiNTc2MTk5Iiwic2NvcGVzIjpbIlRFTkFOVF9BRE1JTiJdLCJzZXNzaW9uSWQiOiI5MzBjYTQ1ZS0zNWEzLTQyZWEtYjBkOC02NjM5OWNhNGUxZTgiLCJleHAiOjE3NTU3OTkwODQsImlzcyI6InRoaW5nc2JvYXJkLmlvIiwiaWF0IjoxNzU1NzkwMDg0LCJmaXJzdE5hbWUiOiJNcml0dW5qYXkiLCJsYXN0TmFtZSI6IlNoYXJtYSIsImVuYWJsZWQiOnRydWUsImlzUHVibGljIjpmYWxzZSwidGVuYW50SWQiOiIwZTQ0MGQ1MC00YzllLTExZjAtOTYxNi0xNTgzYzdkNDJiZjUiLCJjdXN0b21lcklkIjoiMTM4MTQwMDAtMWRkMi0xMWIyLTgwODAtODA4MDgwODA4MDgwIn0.Akqyz0vbia5raV1RZ91VuPd_n8TKX2kFtPYHCQ1VQJprAOD2qVePQL9ef_L6x-_bQOPDcWYw8aos9FcbtC0gBQ
+
+[assets]
+country_name = INDIA
+state_name = Maharashtra
+serial_number = SN12345678
+device_name = PAPAYA_1753777067264731833
+
+[location]
+latitude = 19.0760
+longitude = 72.8777
+
+[profiles]
+country_profile_name = CountryProfile
+state_profile_name = IND
+device_profile_name = SmartParkingDevice
+
+[api]
+device_endpoint = /api/device
+tenant_devices_endpoint = /api/tenant/devices
+
+[settings]
+default_page_size = 1000
+request_timeout = 30
+log_level = INFO
+
+[database]
+dbname = postgres
+user = myuser
+password = example
+host = localhost
+port = 5432
+options = -c search_path=papaya_parking_db
+
+[camera]
+video_duration = 10
+fps = 30
+resolution = 1920x1080
+camera_index = 0
+output_folder = ./media_files
+
